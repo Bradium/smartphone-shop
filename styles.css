@@ -1,0 +1,317 @@
+header {
+    background-color: #0776A0;
+}
+
+.container {
+    max-width: 1600px;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header styles */
+
+header .container {
+    min-height: 150px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.header-logo, .header-brandname {
+    float: left;
+}
+
+.header-brandname {
+    margin-left: 15px;
+    color: #E8E8E8;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+}
+
+/* Main menu styles */
+
+nav {
+    background-color: #E8E8E8;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-menu-item {
+    display: block;
+    height: 40px;
+    min-width: 20%;
+    background-color: #E8E8E8;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: inset 0 0 0 1px #0776A0;
+}
+
+.main-menu-item a {
+    color: #0776A0;
+    font-size: 18px;
+}
+
+.main-menu-item:hover {
+    background-color: #0776A0;
+    box-shadow: inset 0 0 0 1px #E8E8E8;
+}
+
+.main-menu-item:hover a {
+    color: #E8E8E8;
+}
+
+/* Pros styles */
+
+.our-pros {
+    background-color: #0776A0;
+}
+
+.pros {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pros-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #E8E8E8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    overflow: hidden;
+}
+
+.pros-item-desc {
+    position: absolute;
+    transform: translateY(-205px);
+    transition-duration: 1s;
+    transition-property: transform;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(232, 232, 232, 0.8);
+}
+
+.pros-item:hover  {
+    box-shadow: 0 0 0 5px #24587A;
+}
+
+.pros-item:hover .pros-item-desc {
+    transition-duration: 1s;
+    transform: translateY(0px);
+}
+
+.pros-item:nth-child(1) {
+    background-image: url("imgs/web-images/cellularphone_celula_4371.png");
+}
+
+.pros-item:nth-child(2) {
+    background-image: url("imgs/web-images/coins_13367.png");
+}
+
+.pros-item:nth-child(3) {
+    background-image: url("imgs/web-images/speed_13521.png");
+}
+
+.pros-item:nth-child(4) {
+    background-image: url("imgs/web-images/assistant_4403.png");
+}
+
+/* Home page info styles */
+
+.home-page-info {
+    background-color: #0776A0;
+    padding: 30px;
+}
+
+.home-page-info .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-item {
+    position: relative;
+    min-width: 270px;
+    min-height: 270px;
+    border-radius: 30px;
+    background-color: #E8E8E8;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+.info-image {
+    min-width: 240px;
+    min-height: 240px;
+    border-radius: 30px;
+    background-color: #E8E8E8;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition-duration: 1s;
+    transition-property: transform;
+    transform: translateY(0px);
+}
+
+.iOS-info .info-image {
+    background-image: url("imgs/web-images/APPLE.png");
+}
+
+.Android-info .info-image {
+    background-image: url("imgs/web-images/ANDROID.png");
+}
+
+.old-phones-info .info-image {
+    background-image: url("imgs/web-images/old-cellphone.png");
+}
+
+.info-desc {
+    position: absolute;
+    min-width: 270px;
+    min-height: 270px;
+    border-radius: 30px;
+    background-color: #E8E8E8;
+    transition-duration: 1s;
+    transition-property: transform;
+    top: 0.1px;
+    transform: translateY(-300px);
+    text-align: center;
+}
+
+.info-item:hover .info-image {
+    transition-duration: 1s;
+    transform: translateY(300px);
+}
+
+.info-item:hover .info-desc {
+    transition-duration: 1s;
+    transform: translateY(0px);
+}
+
+.info-item:hover {
+    box-shadow: 0 0 0 5px #24587A;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #0776A0;
+}
+
+footer .container {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.form-field {
+    float: left;
+    background-color: #E8E8E8;
+    width: 35%;
+    border-radius: 30px;
+    padding: 30px;
+    min-height: 180px;
+    margin-bottom: 30px;
+}
+
+.form-field input, .form-field select, .form-field textarea {
+    margin-top: 10px;
+}
+
+.about-shop {
+    position: relative;
+    float: right;
+    width: 35%;
+    background-color: #E8E8E8;
+    min-height: 180px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.social-media-images, .social-media-desc {
+    float: left;
+}
+
+.social-media-images .social-wrapper {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #0776A0;
+    padding: 2px;
+    border-radius: 20%;
+}
+
+.social-media-images .social {
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    background-color: #0776A0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.social-media-images .wu-social {
+    background-image: url("imgs/web-images/whatsapp-icon.png");
+}
+
+.social-media-images .fb-social {
+    background-image: url("imgs/web-images/FB-icon.png");
+}
+
+.social-media-images .ig-social {
+    background-image: url("imgs/web-images/instagram-icon.png");
+}
+
+.social-media-images .social-wrapper:hover {
+    box-shadow: 0 0 0 5px #24587A;
+}
+
+.social-media-desc {
+    margin-left: 40px;
+}
+
+.social-media-desc a {
+    text-decoration: none;
+}
+
+.social-media-desc .social {
+    height: 40px;
+    line-height: 40px; /* выравнивание текста */
+    background-color: #0776A0;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1px;
+    margin-top: 10px;
+    color: #E8E8E8;
+}
+
+.social-media-desc .social:hover {
+    box-shadow: 0 0 0 5px #24587A;
+}
+
+.copyrigth {
+    position: absolute;
+    top: 200px;
+    left: 385px;
+}
